@@ -4,12 +4,16 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.io.*;
 
 public class MainActivity extends AppCompatActivity
         implements BottomNavigationView.OnNavigationItemSelectedListener {
 
+    CalculatorFragment calculatorFragment = new CalculatorFragment();
+    CostModelFragment costModelFragment = new CostModelFragment();
+    AccountFragment accountFragment = new AccountFragment();
     BottomNavigationView bottomNavigationView;
 
     @Override
@@ -21,13 +25,8 @@ public class MainActivity extends AppCompatActivity
         bottomNavigationView = findViewById(R.id.bottom_nav);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
         bottomNavigationView.setSelectedItemId(R.id.bottom_nav);
+        loadFragment(new CalculatorFragment());
     }
-
-    CalculatorFragment calculatorFragment = new CalculatorFragment();
-    CostModelFragment costModelFragment = new CostModelFragment();
-    AccountFragment accountFragment = new AccountFragment();
-
-
     @Override
     public boolean
     onNavigationItemSelected(@NonNull MenuItem item)
@@ -57,4 +56,12 @@ public class MainActivity extends AppCompatActivity
         }
         return false;
     }
+
+    void loadFragment(Fragment fragment){
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.relativelayout, fragment)
+                .commit();
+    }
+
 }

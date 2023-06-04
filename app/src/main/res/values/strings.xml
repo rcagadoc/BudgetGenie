@@ -1,4 +1,8 @@
 <resources>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="app_name">Budget Genie</string>
+    <string name="calculator_number_employee_label">Number of employees:</string>
+    <string name="calculator_number_employee_hint">Enter the number of employees to calculate the estimated budget for onboarding costs.</string>
+    <string name="calculator_contingency_label">Contingency (%):</string>
+    <string name="calculator_contingency_hint">Enter a percentage for contingency to include in the budget, e.g., 10%.</string>
 </resources>

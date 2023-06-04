@@ -8,11 +8,84 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <TextView
-            android:id="@+id/calculatorView"
+    <LinearLayout
+            android:id="@+id/contentLayout"
             android:layout_width="match_parent"
-            android:layout_height="430dp"
-            android:textSize="35sp"
-            android:gravity="center"
-            android:text="Calculator" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                app:autoSizeTextType="uniform"
+                android:text="@string/calculator_number_employee_label"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"/>
+
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editTextNumber"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="5"
+                app:autoSizeTextType="uniform"
+                android:text="@string/calculator_number_employee_hint"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="5dp"/>
+
+
+        <!-- // contingency field // -->
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                app:autoSizeTextType="uniform"
+                android:text="@string/calculator_contingency_label"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"/>
+
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/editTextContingencyPercent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="10dp"
+                app:autoSizeTextType="uniform"
+                android:text="@string/calculator_contingency_hint"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="50dp"/>
+
+        <Button android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:text="Calculate"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="90dp"/>
+
+
+    </LinearLayout>
+
+
+
 </FrameLayout>
