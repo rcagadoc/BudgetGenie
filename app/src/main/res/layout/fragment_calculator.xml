@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="number"
                 android:ems="10"
-                android:id="@+id/editTextNumber"
+                android:id="@+id/editNumberOfEmployees"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"/>
 
@@ -61,7 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:id="@+id/editTextContingencyPercent"
+                android:id="@+id/editContingencyPercent"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"/>
 
@@ -78,6 +78,7 @@
 
         <Button android:layout_width="match_parent"
                 android:layout_height="90dp"
+                android:id="@+id/calculateButton"
                 android:text="Calculate"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"

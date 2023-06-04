@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity
 
     CalculatorFragment calculatorFragment = new CalculatorFragment();
     CostModelFragment costModelFragment = new CostModelFragment();
+
+
     AccountFragment accountFragment = new AccountFragment();
     BottomNavigationView bottomNavigationView;
 

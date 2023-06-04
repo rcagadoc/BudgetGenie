@@ -16,4 +16,8 @@ public class CostModelItem {
         return id;
     }
 
+    public String getItemName(){
+        return ItemName;
+    }
+
 }
